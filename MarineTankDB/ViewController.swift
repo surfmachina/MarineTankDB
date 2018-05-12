@@ -44,9 +44,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let marine = marines[indexPath.row]
         
         cell.textLabel?.text = marine.name
-        cell.imageView?.image = UIImage(data: marine.image as Data!)
+        cell.imageView?.image = UIImage(data: (marine.image as Data?)!)
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let marine = marines[indexPath.row]
+        performSegue(withIdentifier: "marinesegue", sender: marine)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let nextVC = segue.destination as! AddMarineViewController
+        nextVC.marine = sender as? Marinelife
+    }
+    
 }
 

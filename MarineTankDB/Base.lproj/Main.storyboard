@@ -36,7 +36,7 @@
                     <navigationItem key="navigationItem" id="Nor-1y-76W">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="dAR-aN-j9M">
                             <connections>
-                                <segue destination="ozL-Jx-loq" kind="show" id="vqv-5U-SES"/>
+                                <segue destination="ozL-Jx-loq" kind="show" identifier="marinesegue" id="vqv-5U-SES"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -76,13 +76,22 @@
                                     <action selector="AddTapped:" destination="ozL-Jx-loq" eventType="touchUpInside" id="5wy-bc-qeq"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gX-iV-mA3">
+                                <rect key="frame" x="165" y="397" width="45" height="30"/>
+                                <state key="normal" title="Delete"/>
+                                <connections>
+                                    <action selector="deletetapped:" destination="ozL-Jx-loq" eventType="touchUpInside" id="ApT-JS-Vsu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="mhR-1v-GrW" firstAttribute="centerX" secondItem="t7U-yl-wM1" secondAttribute="centerX" id="3B5-N4-BoL"/>
                             <constraint firstItem="TsH-vm-q1A" firstAttribute="top" secondItem="X6r-ho-yaL" secondAttribute="top" constant="20" id="ILg-fJ-LKi"/>
                             <constraint firstItem="mhR-1v-GrW" firstAttribute="width" secondItem="TsH-vm-q1A" secondAttribute="width" id="ONH-Nh-taG"/>
+                            <constraint firstItem="2gX-iV-mA3" firstAttribute="top" secondItem="LhC-4s-l84" secondAttribute="bottom" constant="8" id="PED-Ho-gGF"/>
                             <constraint firstItem="TsH-vm-q1A" firstAttribute="centerX" secondItem="t7U-yl-wM1" secondAttribute="centerX" id="Zn8-2d-MQ9"/>
+                            <constraint firstItem="2gX-iV-mA3" firstAttribute="centerX" secondItem="t7U-yl-wM1" secondAttribute="centerX" id="d1R-Pf-EK6"/>
                             <constraint firstItem="LhC-4s-l84" firstAttribute="centerX" secondItem="t7U-yl-wM1" secondAttribute="centerX" id="hWz-HL-THE"/>
                             <constraint firstItem="mhR-1v-GrW" firstAttribute="top" secondItem="TsH-vm-q1A" secondAttribute="bottom" constant="25" id="n77-QR-9MD"/>
                             <constraint firstItem="LhC-4s-l84" firstAttribute="top" secondItem="mhR-1v-GrW" secondAttribute="bottom" constant="20" id="pNJ-nr-37h"/>
@@ -106,6 +115,8 @@
                     <connections>
                         <outlet property="MarineImageView" destination="TsH-vm-q1A" id="rvJ-vm-RiW"/>
                         <outlet property="MarineNameTextField" destination="mhR-1v-GrW" id="QBP-n8-iVp"/>
+                        <outlet property="addupdatebutton" destination="LhC-4s-l84" id="AYx-53-hsc"/>
+                        <outlet property="deletebutton" destination="2gX-iV-mA3" id="wWQ-k1-2ca"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dyn-fm-eFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
