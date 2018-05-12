@@ -13,6 +13,8 @@
 		E2BE458420A6D0C400DD1E79 /* MarineTankDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2BE458220A6D0C400DD1E79 /* MarineTankDB.xcdatamodeld */; };
 		E2BE458620A6D0C400DD1E79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BE458520A6D0C400DD1E79 /* Assets.xcassets */; };
 		E2BE458920A6D0C400DD1E79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BE458720A6D0C400DD1E79 /* LaunchScreen.storyboard */; };
+		E2BE459320A716CD00DD1E79 /* bub.JPG in Resources */ = {isa = PBXBuildFile; fileRef = E2BE459220A716CD00DD1E79 /* bub.JPG */; };
+		E2BE459520A7186600DD1E79 /* AddMarineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BE459420A7186600DD1E79 /* AddMarineViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E2BE458520A6D0C400DD1E79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2BE458820A6D0C400DD1E79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2BE458A20A6D0C400DD1E79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2BE459220A716CD00DD1E79 /* bub.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bub.JPG; sourceTree = "<group>"; };
+		E2BE459420A7186600DD1E79 /* AddMarineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMarineViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,11 @@
 		E2BE457A20A6D0C400DD1E79 /* MarineTankDB */ = {
 			isa = PBXGroup;
 			children = (
+				E2BE459220A716CD00DD1E79 /* bub.JPG */,
 				E2BE457B20A6D0C400DD1E79 /* AppDelegate.swift */,
 				E2BE457D20A6D0C400DD1E79 /* ViewController.swift */,
 				E2BE457F20A6D0C400DD1E79 /* Main.storyboard */,
+				E2BE459420A7186600DD1E79 /* AddMarineViewController.swift */,
 				E2BE458520A6D0C400DD1E79 /* Assets.xcassets */,
 				E2BE458720A6D0C400DD1E79 /* LaunchScreen.storyboard */,
 				E2BE458A20A6D0C400DD1E79 /* Info.plist */,
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E2BE458920A6D0C400DD1E79 /* LaunchScreen.storyboard in Resources */,
+				E2BE459320A716CD00DD1E79 /* bub.JPG in Resources */,
 				E2BE458620A6D0C400DD1E79 /* Assets.xcassets in Resources */,
 				E2BE458120A6D0C400DD1E79 /* Main.storyboard in Resources */,
 			);
@@ -138,6 +145,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2BE459520A7186600DD1E79 /* AddMarineViewController.swift in Sources */,
 				E2BE458420A6D0C400DD1E79 /* MarineTankDB.xcdatamodeld in Sources */,
 				E2BE457E20A6D0C400DD1E79 /* ViewController.swift in Sources */,
 				E2BE457C20A6D0C400DD1E79 /* AppDelegate.swift in Sources */,
